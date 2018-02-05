@@ -56,21 +56,25 @@
         .section1 {
             background-image: url(https://i.imgur.com/TqNXjIo.jpg);
             background-size: cover;
+            background-position-y: 100%;
         }
 
         .leftshoes img {
-            margin-top: 135px;
+            margin-top: 200px;
             height: 380px;
+            margin-left: -55%;
         }
 
         .biglogo img {
             margin-top: 145px;
-            height: 260px;
+            height: 500px;
+            margin-left: -50%;
         }
 
         .rightshoes img {
-            margin-top: 200px;
-            height: 260px;
+            margin-top: 220px;
+            height: 350px;
+            margin-left: 24%;
         }
 
         .botwordstyle {
@@ -84,8 +88,10 @@
             font-size: 60px;
             line-height: 60px;
         }
-        .botword{
-            margin-left: 29.5%
+
+        .botword {
+            margin-left: 30%;
+            margin-bottom: 33px;
         }
     </style>
 </head>
@@ -116,31 +122,30 @@
         <div class="container-fluid">
             <div class="row intro">
                 <div class="col-md-4 col-sm-12 col-12">
-                    <div class="leftshoes">
-                        <img src="https://i.imgur.com/HeXukfh.png" alt="">
+                    <div data-aos="fade-right" data-aos-duration="2500" class="leftshoes">
+                        <img src="https://i.imgur.com/sfPxYHX.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 col-12" style="padding-left: 0;">
-                    <div class="biglogo">
+                    <div data-aos="zoom-in" data-aos-duration="1000" class="biglogo">
                         <img src="https://i.imgur.com/ziowzyW.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 col-12">
-                    <div class="rightshoes">
+                    <div data-aos="fade-left" data-aos-duration="2500" class="rightshoes">
                         <img src="https://i.imgur.com/NcSUeaH.png" alt="">
                     </div>
                 </div>
+                <div class="botword">
+                    <div data-aos="zoom-out" data-aos-duration="1000" class="botword1 botwordstyle">喚</div>
+                    <div data-aos="zoom-out" data-aos-duration="1300" class="botword2 botwordstyle">起</div>
+                    <div data-aos="zoom-out" data-aos-duration="1600" class="botword3 botwordstyle">你</div>
+                    <div data-aos="zoom-out" data-aos-duration="1900" class="botword4 botwordstyle">的</div>
+                    <div data-aos="zoom-out" data-aos-duration="2200" class="botword5 botwordstyle">復</div>
+                    <div data-aos="zoom-out" data-aos-duration="2500" class="botword6 botwordstyle">古</div>
+                    <div data-aos="zoom-out" data-aos-duration="2800" class="botword7 botwordstyle">魂</div>
+                </div>
             </div>
-            <div class="botword">
-                <div class="botword1 botwordstyle">喚</div>
-                <div class="botword2 botwordstyle">起</div>
-                <div class="botword3 botwordstyle">你</div>
-                <div class="botword4 botwordstyle">的</div>
-                <div class="botword5 botwordstyle">復</div>
-                <div class="botword6 botwordstyle">古</div>
-                <div class="botword7 botwordstyle">魂</div>
-            </div>
-
         </div>
     </div>
 
@@ -154,7 +159,7 @@
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="js/smooth scrolling.js"></script>
     <script>
-
+        AOS.init()
     </script>
 </body>
 
