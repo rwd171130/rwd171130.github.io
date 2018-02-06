@@ -56,16 +56,15 @@
         .section2 {
             text-align: center;
             background-image: url(https://i.imgur.com/7jjw8NQ.jpg);
-        }
-        .container{
-            
+            padding: 30px;
         }
 
-        .container h2 {
+
+        .container h1 {
             text-align: center;
         }
 
-        h2 {
+        h1 {
             position: relative;
             display: inline-block;
             color: white;
@@ -73,7 +72,7 @@
             margin-bottom: 50px;
         }
 
-        .container h2::before {
+        .container h1::before {
             content: "";
             position: absolute;
             width: 100px;
@@ -83,7 +82,7 @@
             left: -120px;
         }
 
-        .container h2::after {
+        .container h1::after {
             content: "";
             position: absolute;
             width: 100px;
@@ -100,33 +99,47 @@
             padding: 80px 80px 20px 80px;
             text-align: left;
         }
-        .leftpic .word{
+
+        .leftpic .word {
             text-align: left;
-            
+
         }
 
         .leftpic p {
             font-size: 24px;
-            margin-bottom:20px;
+            margin-bottom: 20px;
         }
-        .botw{
+
+        .botw {
             display: inline-block;
             border-radius: 50%;
             background-color: #0A3877;
-            color:white;
+            color: white;
+            padding: 0 5px;
         }
-        .mid img{
+
+        .mid img {
             width: 180px;
             height: 25px;
             background-size: cover;
             margin-top: 20px;
-            
-        }
-        .bottom p{
-            font-size: 21px;
-            padding: 10px 50px;
+
         }
 
+        .bottom p {
+            font-size: 21px;
+            padding: 10px 30px;
+        }
+        .leftcon{
+            position: relative;
+        }
+
+        .shoes {
+            position: absolute;
+           left: -200px;
+           bottom: 30px;
+            opacity: 0.5;
+        }
     </style>
 </head>
 
@@ -154,25 +167,32 @@
     </nav>
     <div class="section2">
         <div class="container">
-            <h2>品牌歷史</h2>
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="leftpic">
-                        <div class="word">
-                            <p>帆布鞋本來是美國Converse ALLSTAR在1930年代美國發明，1960年代末期，美國資本家在台灣找到降低成本、大量生產的樂土，台灣橡膠鞋廠接到了美國帆布鞋的大量代工訂單後，也學習到製作技術，於是開始推出自有品牌的帆布鞋。</p>
-                            
-                        </div>
-                        <div class="mid">
-                            <img src="https://i.imgur.com/RptM2xI.png" alt="">
-                        </div>
-                        <div class="bottom">
-                            <p>「中國強」創立之際，正值號朝全民<span class="botw">反</span><span class="botw">共</span><span class="botw">抗</span><span class="botw">俄</span>光復大陸時期，為了團結民族情感，凝聚力量，取名為「中國強」。</p>
-                        </div>
-
-                    </div>
+            <h1>品牌歷史</h1>
+            <div class="leftcon">
+                <div class="shoes">
+                    <img src="https://i.imgur.com/I9wS9uH.png" alt="">
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://i.imgur.com/HhvvtLu.jpg" alt="">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="leftpic">
+                            <div class="word">
+                                <p>帆布鞋本來是美國Converse ALLSTAR在1930年代美國發明，1960年代末期，美國資本家在台灣找到降低成本、大量生產的樂土，台灣橡膠鞋廠接到了美國帆布鞋的大量代工訂單後，也學習到製作技術，於是開始推出自有品牌的帆布鞋。</p>
+                            </div>
+                            <div class="mid">
+                                <img src="https://i.imgur.com/RptM2xI.png" alt="">
+                            </div>
+                            <div class="bottom">
+                                <p>「中國強」創立之際，正值號朝全民
+                                    <span class="botw">反</span>
+                                    <span class="botw">共</span>
+                                    <span class="botw">抗</span>
+                                    <span class="botw">俄</span>光復大陸時期，為了團結民族情感，凝聚力量，取名為「中國強」。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="https://i.imgur.com/HhvvtLu.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
