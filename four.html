@@ -85,21 +85,54 @@
             height: 100vh;
             padding-top: 56.5px;
         }
-        
+
         .featuremidimg {
             margin-top: 10px;
         }
-        .featureleftword img{
+
+        .featureleftword img {
             width: 120px;
         }
-        .featuremidword img{
+
+        .featuremidword img {
             width: 120px;
         }
-        .featurerightword img{
+
+        .featurerightword img {
             width: 120px;
         }
-        
-        
+
+
+        .headline h1::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: black;
+            top: 50%;
+            left: -120px;
+        }
+
+        .headline h1::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: black;
+            top: 50%;
+            right: -120px;
+        }
+
+        .headline {
+            text-align: center;
+        }
+
+        .headline h1 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 100px;
+        }
+
     </style>
 </head>
 
@@ -127,7 +160,9 @@
             </ul>
         </nav>
         <div class="section4">
-            <H2></H2>
+            <div class="headline">
+                <H1>國強款式</H1>
+            </div>
             <div class="container">
                 <div class="row feature">
                     <div class="col-md-4 col-sm-12 col-12">
@@ -165,16 +200,14 @@
         </div>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="js/smooth scrolling.js"></script>
     <script src="js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/1.2.5/jquery.filterizr.min.js"></script>
+
     <script>
         AOS.init()
         lightbox.option({
@@ -184,6 +217,18 @@
             'albumLabel': "中國強",
             'maxWidth': 1000,
             'maxHeight': 1000,
+        });
+        jQuery(window).load(function () {
+
+            var $filterizr = $('.filterizr__elements');
+            if ($filterizr.length) {
+                var $filterizrControls = $('.filterizr__controls');
+                $filterizr.filterizr();
+                $filterizrControls.children('li').click(function () {
+                    $filterizrControls.find('li.active').removeClass('active');
+                    $(this).addClass('active');
+                });
+            }
         });
     </script>
 </body>
