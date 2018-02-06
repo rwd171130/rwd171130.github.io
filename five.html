@@ -32,7 +32,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 56px auto 80px auto;
+            margin: 0 auto 80px auto;
             border: 15px solid #B80913;
             background-color: #fff;
         }
@@ -62,6 +62,7 @@
             padding: 0 45px;
             display: inline-block;
         }
+
         .headline h1::before {
             content: "";
             position: absolute;
@@ -90,6 +91,39 @@
             position: relative;
             display: inline-block;
             margin-bottom: 100px;
+        }
+
+        .bigguy img {
+            width: 480px;
+
+        }
+
+        .container-fluid {
+            background-image: url(https://i.imgur.com/pnWK8zM.jpg);
+            padding-top: 56.5px;
+            padding-bottom: 56px;
+        }
+
+        .bigguy {
+            cursor: pointer;
+            transition: all ease-out .4s;
+        }
+
+        .bigguy img:hover,
+        .bigguy img:active,
+        .bigguy img:focus {
+            -webkit-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+            transform: scale(1.15);
+        }
+        .links{
+            margin-top: 25px;
+            font-size: 24px;
+            text-align: left;
+            margin-left: 5%;
+        }
+        .links a{
+            color:black;
         }
     </style>
 </head>
@@ -120,8 +154,26 @@
         <div class="section5">
             <div class="headline">
                 <h1>媒體報導</h1>
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <iframe width="520" height="315" src="https://www.youtube.com/embed/L7ZSCWF_JQk" frameborder="0" allow="autoplay; encrypted-media"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <div data-aos="fade-up" data-aos-duration="1000" class="bigguy">
+                                <a href="https://www.damanwoo.com/node/63612" target="blank">
+                                    <img src="https://i.imgur.com/NtkkH1D.jpg" border="0">
+                                </a>
+                            </div>
+                            <div class="links">
+                                <a href="https://news.tvbs.com.tw/life/338413" target="blank">「中國強」一賣40年　鞋市掀復古風</a>
+                                <br>
+                                <a href="https://www.pixpo.net/post367936" target="blank">你知道台灣有一款鞋叫「中國強」嗎？</a>
+                                <br>
+                                <a href="http://blog.kaishao.idv.tw/?p=260" target="blank">陳凱劭的BLOG » 中國強帆布鞋</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
