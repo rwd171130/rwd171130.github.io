@@ -139,10 +139,21 @@
 
         .nav-pills .nav-link.active,
         .nav-pills .show>.nav-link {
-            background-color:#F2E6B7;
+            background-color: #F2E6B7;
         }
-        .section4{
-            height: 75vh;
+
+
+        .feature {
+            cursor: pointer;
+            transition: all ease-out .4s;
+        }
+
+        .feature img:hover,
+        .feature img:active,
+        .feature img:focus {
+            -webkit-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+            transform: scale(1.15);
         }
     </style>
 </head>
@@ -254,10 +265,12 @@
                         </div>
                         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                             <div class="container">
-                                <div class="row featuresports">
+                                <div class="row feature">
+                                    <div class="col-md-4 col-sm-12 col-12">
+                                    </div>
                                     <div class="col-md-4 col-sm-12 col-12">
                                         <a href="https://i.imgur.com/ZqAPoH1.png" data-lightbox="image-3" data-title="耀眼白">
-                                            <div data-aos="fade-up" data-aos-duration="1000" class="featureleftimg">
+                                            <div data-aos="fade-up" data-aos-duration="1000" class="featureleftimg" style="padding:35px 0;">
                                                 <img class="img-fluid" src="https://i.imgur.com/ZqAPoH1.png" border="0">
                                             </div>
                                         </a>
