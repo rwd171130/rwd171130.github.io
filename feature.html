@@ -132,6 +132,10 @@
             opacity: 0.5;
         }
 
+        .greenlinebox-m {
+            display: none;
+        }
+
         .shoes {
             position: absolute;
             opacity: 1;
@@ -140,6 +144,8 @@
             transform: translate(-50%, -50%);
 
         }
+
+
 
         .infoBox {
             position: relative;
@@ -275,31 +281,61 @@
             font-size: 18px;
         }
 
-        @media screen and (max-width: 992px) {
-            .bg-container {
-                background-image: url(https://i.imgur.com/EfkF86u.jpg);
-            }
-            nav {
-                display: none;
-            }
-
-            @media screen and (max-width: 768px) {
-                /* .container {
-                    max-width: 1000px;
-                } */
+            @media screen and (max-width: 992px) {
+                .bg-container {
+                    background-image: url(https://i.imgur.com/EfkF86u.jpg);
+                }
                 nav {
                     display: none;
                 }
                 .greenlinebox {
                     display: none;
                 }
+                .greenlinebox-m {
+                    display: block;
+                    position: relative;
+                    opacity: 0.5;
+                }
+                .shoes {
+                    bottom: -16%;
+                    width: 430px;
+                }
+                
+            }
+            @media screen and (max-width: 768px) {
+                
+                nav {
+                    display: none;
+                }
+                .greenlinebox {
+                    display: none;
+                }
+                .shoes {
+                bottom: -16%;
+                width: 335px;
+                }
+            }
 
-
-
+            @media screen and (max-width: 555px) {
+                .bg-container {
+                    background-image: url(https://i.imgur.com/6QPPjg4.jpg);
+                    min-height: 667px;
+                }
+                nav {
+                    display: none;
+                }
+                .greenlinebox {
+                    display: none;
+                }
+                .shoes {
+                bottom: -16%;
+                width: 335px;
+                }
             }
 
 
-        }
+        
+        
     </style>
 </head>
 
@@ -332,8 +368,11 @@
                 <div class="greenlinebox">
                     <img src="https://i.imgur.com/qSi65oP.jpg" alt="" class="img-fluid">
                 </div>
+                <div class="greenlinebox-m">
+                    <img src="https://i.imgur.com/zpKjx9C.jpg" alt="" class="img-fluid">
+                </div>
                 <div class="shoesinfo">
-                    <div class="rubberinfo"></div>
+
                     <div class="shoes">
                         <div class="infoBox">
                             <div class="rubberCircle">
