@@ -62,10 +62,13 @@
             display: inline-block;
         }
 
-        .container-fluid {
+        .bg-container {
             background-image: url(https://i.imgur.com/Z50QOYZ.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
             padding-top: 56.5px;
             text-align: center;
+            min-height: 965px;
         }
 
         .container {
@@ -80,7 +83,7 @@
             position: relative;
             display: inline-block;
             color: white;
-            margin-bottom: 125px;
+            margin-bottom: 195px;
         }
 
         .container h1::before {
@@ -128,29 +131,163 @@
         .rubberCircle {
             position: absolute;
             margin-top: 30%;
+            cursor: pointer;
         }
 
         .footArchCircle {
             position: absolute;
             margin-top: 46%;
             margin-left: 15%;
+            cursor: pointer;
         }
 
         .markCircle {
             position: absolute;
             margin-top: 20%;
             margin-left: 57%;
+            cursor: pointer;
         }
+
         .holeCircle {
             position: absolute;
             margin-top: 46%;
             margin-left: 52%;
+            cursor: pointer;
+        }
+
+        .rubberLine {
+            position: absolute;
+            margin-top: 15%;
+            margin-left: -13%;
+            display: none;
+        }
+
+        .rubberLine.active {
+            display: block;
+        }
+
+        .footArchLine {
+            position: absolute;
+            margin-top: 52%;
+            margin-left: 7%;
+            display: none;
+        }
+
+        .footArchLine.active {
+            display: block;
+        }
+
+        .markLine {
+            position: absolute;
+            margin-left: 63%;
+            margin-top: 4%;
+            display: none;
+        }
+
+        .markLine.active {
+            display: block;
+        }
+
+        .holeLine {
+            position: absolute;
+            margin-left: 59%;
+            margin-top: 31%;
+            display: none;
+        }
+
+        .holeLine.active {
+            display: block;
+        }
+
+        .rubber-wb {
+            background-color: white;
+            position: absolute;
+            margin-top: 8%;
+            margin-left: -53%;
+            opacity: 0.8;
+            display: none;
+        }
+
+        .rubber-wb.active {
+            display: block;
+        }
+
+        .footArch-wb {
+            background-color: white;
+            position: absolute;
+            margin-top: 58%;
+            margin-left: -25%;
+            opacity: 0.8;
+            display: none;
+        }
+
+        .footArch-wb.active {
+            display: block;
+        }
+
+        .mark-wb {
+            background-color: white;
+            position: absolute;
+            top: -11px;
+            right: -150px;
+            opacity: 0.8;
+            display: none;
+        }
+
+        .mark-wb.active {
+            display: block;
+        }
+
+        .hole-wb {
+            background-color: white;
+            position: absolute;
+            top: 143px;
+            right: -160px;
+            opacity: 0.8;
+            display: none;
+        }
+
+        .hole-wb.active {
+            display: block;
+        }
+
+        p {
+            margin-bottom: 0rem;
+            text-align: left;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 992px) {
+            .bg-container {
+                background-image: url(https://i.imgur.com/EfkF86u.jpg);
+            }
+            nav {
+                display: none;
+            }
+
+            @media screen and (max-width: 768px) {
+                /* .container {
+                    max-width: 1000px;
+                } */
+                nav {
+                    display: none;
+                }
+                .greenlinebox {
+                    display: none;
+                }
+
+
+
+            }
+
+
         }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="bg-container">
         <nav>
             <ul class="menu">
                 <li>
@@ -178,28 +315,60 @@
                 <div class="greenlinebox">
                     <img src="https://i.imgur.com/qSi65oP.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="shoes">
-                    <div class="infoBox">
-                        <div class="rubberCircle">
-                            <img src="svg/yellow-circle.svg" alt="" class="w-100">
+                <div class="shoesinfo">
+                    <div class="rubberinfo"></div>
+                    <div class="shoes">
+                        <div class="infoBox">
+                            <div class="rubberCircle">
+                                <img src="svg/yellow-circle.svg" alt="" class="w-100">
+                            </div>
+                            <div class="footArchCircle">
+                                <img src="svg/yellow-circle.svg" alt="" class="w-100">
+                            </div>
+                            <div class="markCircle">
+                                <img src="svg/yellow-circle.svg" alt="" class="w-100">
+                            </div>
+                            <div class="holeCircle">
+                                <img src="svg/yellow-circle.svg" alt="" class="w-100">
+                            </div>
+                            <div class="rubberLine">
+                                <img src="svg/rubberLine.svg" alt="" class="w-100">
+                            </div>
+                            <div class="footArchLine">
+                                <img src="svg/footArchLine.svg" alt="" class="w-100">
+                            </div>
+                            <div class="markLine">
+                                <img src="svg/markLine.svg" alt="" class="w-100">
+                            </div>
+                            <div class="holeLine">
+                                <img src="svg/holeLine.svg" alt="" class="w-100">
+                            </div>
+                            <div class="rubber-wb">
+                                <p>全國首創第一雙
+                                    <br>有生膠大底專利的帆布鞋
+                                    <br>橡膠純度較一般市面鞋款高</p>
+                            </div>
+                            <div class="footArch-wb">
+                                <p>專利足弓
+                                    <br>特殊設計的鞋墊孔洞
+                                    <br>有更好的透氣舒適度</p>
+                            </div>
+                            <div class="mark-wb">
+                                <p>鞋舌正面印有
+                                    <br>大大的中國強商標</p>
+                            </div>
+                            <div class="hole-wb">
+                                <p>側邊兩個小洞可以
+                                    <br>讓鞋子更合腳</p>
+                            </div>
+
+
                         </div>
-                        <div class="footArchCircle">
-                            <img src="svg/yellow-circle.svg" alt="" class="w-100">
-                        </div>
-                        <div class="markCircle">
-                            <img src="svg/yellow-circle.svg" alt="" class="w-100">
-                        </div>
-                        <div class="holeCircle">
-                            <img src="svg/yellow-circle.svg" alt="" class="w-100">
-                        </div>
-                        <div class="rubberLine">
-                            
-                        </div>
+                        <img src="https://i.imgur.com/I3hbm9l.png" alt="" class="img-fluid">
+
+
 
                     </div>
-                    <img src="https://i.imgur.com/I3hbm9l.png" alt="" class="img-fluid">
-
-
 
                 </div>
 
@@ -217,6 +386,24 @@
     <script src="js/smooth scrolling.js"></script>
     <script>
         AOS.init()
+    </script>
+    <script>
+        $(".rubberCircle").click(function () {
+            $(".rubberLine").toggleClass("active");
+            $(".rubber-wb").toggleClass("active");
+        });
+        $(".footArchCircle").click(function () {
+            $(".footArchLine").toggleClass("active");
+            $(".footArch-wb").toggleClass("active");
+        });
+        $(".markCircle").click(function () {
+            $(".markLine").toggleClass("active");
+            $(".mark-wb").toggleClass("active");
+        });
+        $(".holeCircle").click(function () {
+            $(".holeLine").toggleClass("active");
+            $(".hole-wb").toggleClass("active");
+        });
     </script>
 </body>
 
