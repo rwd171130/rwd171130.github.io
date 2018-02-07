@@ -53,6 +53,58 @@
             }
         }
 
+        @media screen and (max-width: 970px) {
+            nav {
+                width: 720px;
+                margin: 0 auto 80px auto;
+            }
+
+            .logo {
+                width: 130px!important;
+                height: 130px!important;
+            }
+            .menu {
+                font-size: 25px!important;
+            }
+
+            .menu>li {
+                padding: 26px 45px!important;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            nav {
+                width: 350px;
+                margin: 0 auto 80px auto;
+                background-image: url(https://i.imgur.com/PvTFMOa.png);
+            }
+            @keyframes ani1 {
+            0% {
+                background-image: url(https://i.imgur.com/PvTFMOa.png);
+            }
+            25% {
+                background-image: url(https://i.imgur.com/zdc77W4.png);
+            }
+            75% {
+                background-image: url(https://i.imgur.com/PvTFMOa.png);
+            }
+            100% {
+                background-image: url(https://i.imgur.com/zdc77W4.png);
+            }
+        }
+            .logo {
+                width: 80px!important;
+                height: 80px!important;
+            }
+            .menu {
+                font-size: 18px!important;
+            }
+
+            .menu>li {
+                padding: 35px 18px!important;
+            }
+        }
+        
+
         .logo {
             position: absolute;
             top: 50%;
@@ -144,9 +196,6 @@
             transform: translate(-50%, -50%);
 
         }
-
-
-
         .infoBox {
             position: relative;
         }
@@ -285,9 +334,6 @@
                 .bg-container {
                     background-image: url(https://i.imgur.com/EfkF86u.jpg);
                 }
-                nav {
-                    display: none;
-                }
                 .greenlinebox {
                     display: none;
                 }
@@ -303,10 +349,6 @@
                 
             }
             @media screen and (max-width: 768px) {
-                
-                nav {
-                    display: none;
-                }
                 .greenlinebox {
                     display: none;
                 }
@@ -320,9 +362,6 @@
                 .bg-container {
                     background-image: url(https://i.imgur.com/6QPPjg4.jpg);
                     min-height: 667px;
-                }
-                nav {
-                    display: none;
                 }
                 .greenlinebox {
                     display: none;
