@@ -58,40 +58,107 @@
             height: 80px;
             border-radius: 80px;
             background-color: #fff;
-            padding: 10px;
             text-align: center;
             font-size: 60px;
-            line-height: 60px;
+            line-height: 80px;
         }
 
         .botword {
-            margin-left: 30%;
-            margin-bottom: 33px;
             position: absolute;
             bottom: 20px;
+            text-align: center;
+            width: 100%;
+            animation: ani1 2s;
         }
+
+        @media screen and (max-width: 1220px) {
+            .botword1,
+            .botword2 {
+                display: none;
+            }
+        }
+
+
+        @media screen and (max-width: 960px) {
+            .biglogo {
+                width: 440px;
+            }
+            .leftshoes {
+                display: none;
+            }
+            .rightshoes {
+                position: absolute;
+                margin-top: 380px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                width: 100%;
+            }
+            .rightshoes img {
+                width: 350px;
+            }
+            .botword {
+                text-align: center;
+                width: 100%;
+            }
+            .section1 {
+                background-image: url(https://i.imgur.com/rOHknBm.jpg);
+            }
+
+            @media screen and (max-width: 768px) {
+                .botwordstyle {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 70px;
+                    font-size: 30px;
+                    line-height: 60px;
+                }
+                .botword {
+                    text-align: center;
+                    width: 100%;
+                }
+                .section1 {
+                    background-image: url(https://i.imgur.com/qPPk94x.jpg);
+                }
+            }
+
+
+            @keyframes ani1 {
+                0% {
+                    opacity: 0;
+                }
+                25% {
+                    opacity: 0.3;
+                }
+                75% {
+                    opacity: 0.8;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
     </style>
 </head>
 
 <body>
     <div class="section1">
-        <div data-aos="fade-right" data-aos-duration="2500"class="leftshoes">
+        <div data-aos="fade-right" data-aos-duration="2800" class="leftshoes">
             <img class="img-fluid" src="https://i.imgur.com/sfPxYHX.png" alt="">
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1800"class="biglogo">
+        <div data-aos="zoom-in" data-aos-duration="2000" class="biglogo">
             <img class="img-fluid" src="https://i.imgur.com/ziowzyW.png" alt="">
         </div>
-        <div data-aos="fade-left" data-aos-duration="2500"class="rightshoes">
+        <div data-aos="fade-left" data-aos-duration="2800" class="rightshoes">
             <img class="img-fluid" src="https://i.imgur.com/ukbYUkn.png" alt="">
         </div>
         <div class="botword">
-            <div data-aos="zoom-out" data-aos-duration="1300" class="botword1 botwordstyle">喚</div>
-            <div data-aos="zoom-out" data-aos-duration="1600" class="botword2 botwordstyle">起</div>
-            <div data-aos="zoom-out" data-aos-duration="1900" class="botword3 botwordstyle">你</div>
-            <div data-aos="zoom-out" data-aos-duration="2200" class="botword4 botwordstyle">的</div>
-            <div data-aos="zoom-out" data-aos-duration="2500" class="botword5 botwordstyle">復</div>
-            <div data-aos="zoom-out" data-aos-duration="2800" class="botword6 botwordstyle">古</div>
-            <div data-aos="zoom-out" data-aos-duration="3000" class="botword7 botwordstyle">魂</div>
+            <div class="botword1 botwordstyle">喚</div>
+            <div class="botword2 botwordstyle">起</div>
+            <div class="botword3 botwordstyle">你</div>
+            <div class="botword4 botwordstyle">的</div>
+            <div class="botword5 botwordstyle">復</div>
+            <div class="botword6 botwordstyle">古</div>
+            <div class="botword7 botwordstyle">魂</div>
         </div>
         <!-- <div data-aos="fade-right" data-aos-duration="2500">
             
