@@ -33,8 +33,62 @@
             justify-content: space-between;
             align-items: center;
             margin: 0 auto 80px auto;
-            border: 15px solid #B80913;
             background-color: #fff;
+            background-image: url(https://i.imgur.com/Xn4TO2J.png);
+            background-size: cover;
+            animation: ani1 0.4s infinite;
+        }
+
+        @keyframes ani1 {
+            0% {
+                background-image: url(https://i.imgur.com/Xn4TO2J.png);
+            }
+            25% {
+                background-image: url(https://i.imgur.com/G6tNko9.png);
+            }
+            75% {
+                background-image: url(https://i.imgur.com/Xn4TO2J.png);
+            }
+            100% {
+                background-image: url(https://i.imgur.com/G6tNko9.png);
+            }
+        }
+
+        @media screen and (max-width: 970px) {
+            nav {
+                width: 720px;
+                margin: 0 auto 80px auto;
+            }
+
+            .logo {
+                width: 130px!important;
+                height: 130px!important;
+            }
+            .menu {
+                font-size: 25px!important;
+            }
+
+            .menu>li {
+                padding: 26px 45px!important;
+            }
+        }
+        @media screen and (max-width: 970px) {
+            nav {
+                width: 720px;
+                margin: 0 auto 80px auto;
+            }
+
+            .logo {
+                width: 130px!important;
+                height: 130px!important;
+            }
+            .menu {
+                font-size: 25px!important;
+            }
+
+            .menu>li {
+                padding: 26px 45px!important;
+            }
         }
 
         .logo {
@@ -59,7 +113,7 @@
         }
 
         .menu>li {
-            padding: 0 45px;
+            padding: 26px 45px;
             display: inline-block;
         }
 
@@ -108,7 +162,7 @@
             text-align: left;
         }
 
-    
+
         .leftpic .word {
             text-align: left;
 
@@ -184,7 +238,7 @@
 
         .footer ul li {
             display: inline-block;
-            
+
             list-style: none;
             text-align: center;
             font-size: 18px;
@@ -193,16 +247,19 @@
         .footer li a {
             color: black;
         }
-        @media screen and (max-width:960px){
-            .leftpic{
+
+        @media screen and (max-width:960px) {
+            .leftpic {
                 background-image: url('img/paper.png');
                 width: 100%;
                 height: auto;
                 padding: 20px;
                 margin-bottom: 50px;
             }
-            }
         }
+
+        }
+
         /* @media screen and (max-width:768px) {
             .leftpic {
                 background-image: url('img/paper.png');
