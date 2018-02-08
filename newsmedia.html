@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中國強-品牌官網</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <style>
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        body {
+            font-family: 標楷體;
+            margin: 0 auto;
+        }
+
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        nav {
+            position: relative;
+            width: 930px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto 80px auto;
+            background-color: #fff;
+            background-image: url(https://i.imgur.com/Xn4TO2J.png);
+            background-size: cover;
+            animation: ani1 0.4s infinite;
+        }
+
+        @keyframes ani1 {
+            0% {
+                background-image: url(https://i.imgur.com/Xn4TO2J.png);
+            }
+            25% {
+                background-image: url(https://i.imgur.com/G6tNko9.png);
+            }
+            75% {
+                background-image: url(https://i.imgur.com/Xn4TO2J.png);
+            }
+            100% {
+                background-image: url(https://i.imgur.com/G6tNko9.png);
+            }
+        }
+
+        @media screen and (max-width: 970px) {
+            nav {
+                width: 720px;
+                margin: 0 auto 80px auto;
+            }
+
+            .logo {
+                width: 130px!important;
+                height: 130px!important;
+            }
+            .menu {
+                font-size: 25px!important;
+            }
+
+            .menu>li {
+                padding: 26px 45px!important;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                width: 355px;
+                margin: 0 auto 80px auto;
+                background-image: url(https://i.imgur.com/QKK1EPT.png);
+            }
+            @keyframes ani1 {
+                0% {
+                    background-image: url(https://i.imgur.com/QKK1EPT.png);
+                }
+                25% {
+                    background-image: url(https://i.imgur.com/x5elhBs.png);
+                }
+                75% {
+                    background-image: url(https://i.imgur.com/QKK1EPT.png);
+                }
+                100% {
+                    background-image: url(https://i.imgur.com/x5elhBs.png);
+                }
+            }
+            .logo {
+                width: 80px!important;
+                height: 80px!important;
+            }
+            .menu {
+                font-size: 25px!important;
+            }
+
+            .menu>li {
+                padding: 30px 9px!important;
+            }
+        }
+
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 177px;
+            height: 177px;
+        }
+
+        .menu {
+            font-size: 43px;
+        }
+
+        .menu a {
+            color: #67000B
+        }
+
+        .menu a:hover {
+            color: #67000B
+        }
+
+        .menu>li {
+            padding: 26px 45px;
+            display: inline-block;
+        }
+
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 177px;
+            height: 177px;
+        }
+
+        .menu {
+            font-size: 43px;
+        }
+
+        .menu a {
+            color: #67000B
+        }
+
+        .menu a:hover {
+            color: #67000B
+        }
+
+        .menu>li {
+            padding: 26px 45px;
+            display: inline-block;
+        }
+
+        .headline h1::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: black;
+            top: 50%;
+            left: -120px;
+        }
+
+        .headline h1::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: black;
+            top: 50%;
+            right: -120px;
+        }
+
+        .headline {
+            text-align: center;
+        }
+
+        .headline h1 {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 100px;
+        }
+
+
+        .btnimg img {
+            width: 480px;
+        }
+
+
+        .container-fluid {
+            background-image: url(https://i.imgur.com/pnWK8zM.jpg);
+            padding-top: 56.5px;
+            padding-bottom: 56px;
+        }
+
+        .btnimg {
+            cursor: pointer;
+            transition: all ease-out .4s;
+        }
+
+        .btnimg img:hover,
+        .btnimg img:active,
+        .btnimg img:focus {
+            -webkit-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+            transform: scale(1.15);
+        }
+
+        .links {
+            margin-top: 25px;
+            font-size: 24px;
+            text-align: left;
+            margin-left: 6%;
+        }
+
+        .links a {
+            color: black;
+        }
+
+        .footer {
+            background-color: #F3E6B7;
+        }
+
+        .botlogo {
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .botlogo img {
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+        }
+
+        .buy {
+            display: inline-block;
+            font-family: 微軟正黑體;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+        .footer ul {
+            margin: 0;
+            display: inline-block;
+        }
+
+        .footer ul li {
+            display: inline-block;
+
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .footer li a {
+            color: black;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .btnimg img {
+                width: 450px;
+            }
+            .links {
+                font-size: 18px;
+            }
+            .youtube iframe {
+                width: 450px;
+            }
+        }
+
+        @media screen and (max-width: 960px) {
+            .links {
+                text-align: center;
+            }
+            .btnimg img {
+                margin-bottom: 40px;
+            }
+            .youtube iframe {
+                margin-bottom: 40px;
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .btnimg img {
+                width: 300px;
+                
+            }
+            .youtube iframe {
+                width: 300px;
+                height: 200px;
+            }
+        }
+        @media screen and (max-width: 555px) {
+            .headline h1 {
+                margin-bottom: 100px;
+            }
+            .headline h1::before {
+                width: 80px;
+                left: -90px;
+            }
+
+            .headline h1::after {
+                width: 80px;
+                right: -90px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="/history.html">歷史</a>
+                </li>
+                <li>
+                    <a href="/feature.html">特色</a>
+                </li>
+            </ul>
+            <div class="logo">
+                <img src="https://i.imgur.com/01X8g0q.png" alt="" class="img-fluid">
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="/catlog.html">款式</a>
+                </li>
+                <li>
+                    <a href="/newsmedia.html">報導</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="section5">
+            <div class="headline">
+                <h1>媒體報導</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="youtube">
+                                <iframe width="550" height="315" src="https://www.youtube.com/embed/L7ZSCWF_JQk" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div data-aos="fade-up" data-aos-duration="1000" class="btnimg" data-toggle="modal" data-target="#exampleModalLong">
+                                <img src="https://i.imgur.com/NtkkH1D.jpg" border="0">
+                            </div>
+
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLongTitle">【台灣設計】我台、所以我存在，中國強帆布鞋</h3>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>校園電影中用鞋帶掛在脖子上捨不得穿的布鞋、知名作家林清玄小時候最想拿到的禮物、台客搖滾嘉年華票選第一的商品，這是『中國強 China Strong』，讓五六年級生牽腸掛肚的夢幻逸品，識貨潮流青年鞋櫃一定要站個位置的鞋款！</p>
+
+
+
+                                            <h4>一雙抵三雙 名符其實地耐穿</h4>
+
+                                            <p>擁有 40 年以上的歷史，『中國強』是全國首創第一雙有生膠大底專利的帆布鞋，鞋底的橡膠純度較一般市面鞋款高，所以耐磨，號稱一雙可抵三雙。鞋墊上寫著『高級鞋墊不濕不臭』八個字，傳達『中國強』對功能性的重視。鞋墊面布採用耐磨棉紗，活動式鞋店便於清洗，加上特殊設計的鞋墊孔洞，讓鞋子穿起來可以有更好的透氣舒適度。</p>
+
+                                            <p>曾經造成全國熱賣的中國強帆布鞋，幾乎成了五六年級生的共同回憶，當年正紅的『黃俊雄布袋戲』還特別塑造了一個蒙面俠名叫『中國強』的靈魂人物，與男主角史豔文同台軋戲。</p>
+
+
+
+                                            <h4>『好也要好台灣』台灣是唯一的生產地</h4>
+                                            <img src="https://i.imgur.com/ft2s0RP.jpg" style="width:100%;" alt="">
+                                            <img src="https://i.imgur.com/vqkaa26.jpg" style="width:100%;" alt="">
+                                            <br>
+                                            <br>
+
+                                            <p>眼見台灣鞋業追求低成本高利潤，不斷外移，中國強第二代經營者陳先生堅持『好也要好台灣』，整個流程從開模、胚布染色、製鞋到鞋盒印刷，全部都在台灣製造，不強求與經銷商合作，保留合理利潤空間讓鞋業留在台灣。
+                                                四十週年紀念鞋款，難得地在鞋頭上做了點小花樣，側身還很潮地加上 ChinaStrong 英文草寫體，不過真正最 high 的地方，當然還是在鞋舌及鞋跟處的『中國強』三個字阿！</p>
+
+
+
+                                            <h4>名人加持 復古台客必備鞋款</h4>
+
+                                            <p>面對市場的變化，經歷從高峰跌落谷底的痛苦，中國強依然不改絕不偷工減料削價競爭的原則，反倒堅信自己的品牌價值，維持口碑，才不會被市場淘汰。</p>
+
+                                            <p>2007 年的『台客搖滾嘉年華』，中國強被票選為台客商品第一名，以俗而夠力的復古精神加上對自家產品品質的信心，紮紮時時地打在這四十多個年頭中！</p>
+                                            <a href="https://www.damanwoo.com/node/63612" target="blank">內文取自大人物雜誌</a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="links">
+                                <a href="https://news.tvbs.com.tw/life/338413" target="blank">「中國強」一賣40年　鞋市掀復古風</a>
+                                <br>
+                                <a href="https://www.pixpo.net/post367936" target="blank">你知道台灣有一款鞋叫「中國強」嗎？</a>
+                                <br>
+                                <a href="http://blog.kaishao.idv.tw/?p=260" target="blank">陳凱劭的BLOG » 中國強帆布鞋</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="botlogo">
+            <img src="https://i.imgur.com/01X8g0q.png" alt="">
+            <div class="buy">購買來源
+                <i class="fas fa-angle-double-right"></i>
+            </div>
+            <ul>
+                <li>
+                    <a href="http://www.books.com.tw/web/sys_brand/0/0000005019" target="blank">博客來
+                        <span style=font-weight:bold>/</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1501100268" target="blank">Momo購物網
+                        <span style=font-weight:bold>/</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ecshweb.pchome.com.tw/search/v3.3/?q=%E4%B8%AD%E5%9C%8B%E5%BC%B7%E5%B8%86%E5%B8%83%E9%9E%8B" target="blank">PChome商店街 </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/1.2.5/jquery.filterizr.min.js"></script>
+
+    <script>
+        AOS.init()
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'positionFromTop': 50,
+            'albumLabel': "中國強",
+            'maxWidth': 1000,
+            'maxHeight': 1000,
+        });
+    </script>
+</body>
+
+</html>

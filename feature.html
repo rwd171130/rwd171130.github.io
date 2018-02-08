@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中國強-品牌官網</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <style>
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        body {
+            font-family: 標楷體;
+            margin: 0 auto;
+        }
+
+        ul {
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        nav {
+            position: relative;
+            width: 930px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto 80px auto;
+            background-color: #fff;
+            background-image: url(https://i.imgur.com/Xn4TO2J.png);
+            background-size: cover;
+            animation: ani1 0.4s infinite;
+        }
+
+        @keyframes ani1 {
+            0% {
+                background-image: url(https://i.imgur.com/Xn4TO2J.png);
+            }
+            25% {
+                background-image: url(https://i.imgur.com/G6tNko9.png);
+            }
+            75% {
+                background-image: url(https://i.imgur.com/Xn4TO2J.png);
+            }
+            100% {
+                background-image: url(https://i.imgur.com/G6tNko9.png);
+            }
+        }
+
+        @media screen and (max-width: 970px) {
+            nav {
+                width: 720px;
+                margin: 0 auto 80px auto;
+            }
+
+            .logo {
+                width: 130px!important;
+                height: 130px!important;
+            }
+            .menu {
+                font-size: 25px!important;
+            }
+
+            .menu>li {
+                padding: 26px 45px!important;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                width: 355px;
+                margin: 0 auto 80px auto;
+                background-image: url(https://i.imgur.com/QKK1EPT.png);
+            }
+            @keyframes ani1 {
+                0% {
+                    background-image: url(https://i.imgur.com/QKK1EPT.png);
+                }
+                25% {
+                    background-image: url(https://i.imgur.com/x5elhBs.png);
+                }
+                75% {
+                    background-image: url(https://i.imgur.com/QKK1EPT.png);
+                }
+                100% {
+                    background-image: url(https://i.imgur.com/x5elhBs.png);
+                }
+            }
+            .logo {
+                width: 80px!important;
+                height: 80px!important;
+            }
+            .menu {
+                font-size: 25px!important;
+            }
+
+            .menu>li {
+                padding: 30px 9px!important;
+            }
+        }
+
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 177px;
+            height: 177px;
+        }
+
+        .menu {
+            font-size: 43px;
+        }
+
+        .menu a {
+            color: #67000B
+        }
+
+        .menu a:hover {
+            color: #67000B
+        }
+
+        .menu>li {
+            padding: 26px 45px;
+            display: inline-block;
+        }
+
+        .bg-container {
+            background-image: url(https://i.imgur.com/Z50QOYZ.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 56.5px;
+            text-align: center;
+            min-height: 965px;
+        }
+
+        .container {
+            padding-bottom: 30px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        h1 {
+            position: relative;
+            display: inline-block;
+            color: white;
+            margin-bottom: 195px;
+        }
+
+        .container h1::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: white;
+            top: 50%;
+            left: -120px;
+        }
+
+        .container h1::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background-color: white;
+            top: 50%;
+            right: -120px;
+        }
+
+        .section3 {
+            position: relative;
+        }
+
+        .greenlinebox {
+            position: relative;
+            opacity: 0.5;
+        }
+
+        .greenlinebox-m {
+            display: none;
+        }
+
+        .shoes {
+            position: absolute;
+            opacity: 1;
+            bottom: -30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: shine 1s forwards;
+        }
+
+        .infoBox {
+            position: relative;
+        }
+
+        .infoBox2 {
+            display: none;
+        }
+
+        .rubberCircle {
+            position: absolute;
+            margin-top: 30%;
+            cursor: pointer;
+            border: dashed 5px #F39700;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            opacity: 0;
+            animation: shine 1s forwards;
+        }
+
+        .footArchCircle {
+            position: absolute;
+            margin-top: 46%;
+            margin-left: 15%;
+            cursor: pointer;
+            border: dashed 5px #F39700;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            opacity: 0;
+            animation: shine 1s 0.5s forwards;
+        }
+        .markCircle {
+            position: absolute;
+            margin-top: 20%;
+            margin-left: 57%;
+            cursor: pointer;
+            border: dashed 5px #F39700;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            opacity: 0;
+            animation: shine 1s 1s forwards;
+        }
+
+        .holeCircle {
+            position: absolute;
+            margin-top: 46%;
+            margin-left: 52%;
+            cursor: pointer;
+            border: dashed 5px #F39700;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            opacity: 0;
+            animation: shine 1s 1.5s forwards;
+        }
+
+        .rubberLine {
+            position: absolute;
+            margin-top: 15%;
+            margin-left: -13%;
+            display: none;
+            width: 100px;
+        }
+
+        .rubberLine.active {
+            display: block;
+            animation: shine 0.3s forwards;
+        }
+
+        .footArchLine {
+            position: absolute;
+            margin-top: 52%;
+            margin-left: 7%;
+            display: none;
+        }
+
+        .footArchLine.active {
+            display: block;
+            animation: shine 0.3s forwards;
+        }
+
+        .markLine {
+            position: absolute;
+            margin-left: 63%;
+            margin-top: 4%;
+            display: none;
+            
+        }
+
+        .markLine.active {
+            display: block;
+            animation: shine 0.3s forwards;
+        }
+
+        .holeLine {
+            position: absolute;
+            margin-left: 59%;
+            margin-top: 31%;
+            display: none;
+        }
+
+        .holeLine.active {
+            display: block;
+            animation: shine 0.3s forwards;
+        }
+
+        .rubber-wb {
+            background-color: white;
+            position: absolute;
+            margin-top: 8%;
+            margin-left: -53%;
+            opacity: 0.8;
+            display: none;
+        }
+
+        .rubber-wb.active {
+            display: block;
+            animation: shine 0.3s forwards;
+        }
+
+        .footArch-wb {
+            background-color: white;
+            position: absolute;
+            margin-top: 58%;
+            margin-left: -25%;
+            opacity: 0.8;
+            display: none;
+        }
+
+        .footArch-wb.active {
+            display: block;
+            animation: shine 0.3s forwards;
+        }
+
+        .mark-wb {
+            background-color: white;
+            position: absolute;
+            top: -11px;
+            right: -150px;
+            opacity: 0.8;
+            display: none;
+        }
+
+        .mark-wb.active {
+            display: block;
+            animation: shine 0.3s forwards;
+        }
+
+        .hole-wb {
+            background-color: white;
+            position: absolute;
+            top: 143px;
+            right: -160px;
+            opacity: 0.8;
+            display: none;
+        }
+
+        .hole-wb.active {
+            display: block;
+            animation: shine 0.3s forwards;
+        }
+
+        p {
+            margin-bottom: 0rem;
+            text-align: left;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .footer {
+            background-color: #F3E6B7;
+        }
+
+        .botlogo {
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .botlogo img {
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+        }
+
+        .buy {
+            display: inline-block;
+            font-family: 微軟正黑體;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+        .footer ul {
+            margin: 0;
+            display: inline-block;
+        }
+
+        .footer ul li {
+            display: inline-block;
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .footer li a {
+            color: black;
+        }
+
+        @media screen and (max-width: 992px) {
+            .bg-container {
+                background-image: url(https://i.imgur.com/EfkF86u.jpg);
+            }
+            .greenlinebox {
+                display: none;
+            }
+            .greenlinebox-m {
+                display: block;
+                position: relative;
+                opacity: 0.5;
+            }
+            .shoes {
+                bottom: -16%;
+                width: 430px;
+            }
+            .hole-wb{
+                top:86px;
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .greenlinebox {
+                display: none;
+            }
+            .shoes {
+                bottom: -11%;
+                width: 378px;
+            }
+            .hole-wb{
+                top:116px;
+            }
+            
+        }
+
+        @media screen and (max-width: 555px) {
+            .bg-container {
+                background-image: url(https://i.imgur.com/6QPPjg4.jpg);
+                background-size: cover;
+                min-height: 667px;
+            }
+            .container h1 {
+                margin-bottom: 100px;
+            }
+            .container h1::before {
+                width: 80px;
+                left: -90px;
+            }
+
+            .container h1::after {
+                width: 80px;
+                right: -90px;
+            }
+            .greenlinebox {
+                display: none;
+            }
+            .shoes {
+                bottom: -16%;
+                width: 335px;
+            }
+            .infoBox {
+                display: none;
+            }
+            .infoBox2 {
+                display: block;
+                position: absolute;
+                top: 105px;
+                opacity: 0;
+                animation: shine 1s forwards;
+            }
+            .infoBox3 {
+                display: block;
+                position: absolute;
+                bottom: 65px;
+                left: 50px;
+                opacity: 0;
+                animation: shine 1s 0.5s forwards;
+            }
+            .infoBox4 {
+                display: block;
+                position: absolute;
+                top: 65px;
+                right: 87px;
+                opacity: 0;
+                animation: shine 1s 1s forwards;
+            }
+            .infoBox5 {
+                display: block;
+                position: absolute;
+                bottom: 65px;
+                right: 107px;
+                opacity: 0;
+                animation: shine 1s 1.5s forwards;
+            }
+            .circlesmall {
+                border: dashed 3px #F39700;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+        }
+        @keyframes shine {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg-container">
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="/history.html">歷史</a>
+                </li>
+                <li>
+                    <a href="/feature.html">特色</a>
+                </li>
+            </ul>
+            <div class="logo">
+                <img src="https://i.imgur.com/01X8g0q.png" alt="" class="img-fluid">
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="/catlog.html">款式</a>
+                </li>
+                <li>
+                    <a href="/newsmedia.html">報導</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="section3">
+                <h1>鞋體特色</h1>
+                <div class="greenlinebox">
+                    <img src="https://i.imgur.com/qSi65oP.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="greenlinebox-m">
+                    <img src="https://i.imgur.com/zpKjx9C.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="shoesinfo">
+
+                    <div  class="shoes">
+                        <div class="infoBox">
+                            <div class="rubberCircle">
+                            </div>
+                            <div class="footArchCircle">
+                            </div>
+                            <div class="markCircle">
+                            </div>
+                            <div class="holeCircle">
+                            </div>
+                            <div class="rubberLine">
+                                <img src="svg/rubberLine.svg" alt="" class="w-100">
+                            </div>
+                            <div class="footArchLine">
+                                <img src="svg/footArchLine.svg" alt="" style="width: 100px">
+                            </div>
+                            <div class="markLine">
+                                <img src="svg/markLine.svg" alt="" class="w-100">
+                            </div>
+                            <div class="holeLine">
+                                <img src="svg/holeLine.svg" alt="" class="w-100">
+                            </div>
+                            <div class="rubber-wb">
+                                <p>全國首創第一雙
+                                    <br>有生膠大底專利的帆布鞋
+                                    <br>橡膠純度較一般市面鞋款高</p>
+                            </div>
+                            <div class="footArch-wb">
+                                <p>專利足弓
+                                    <br>特殊設計的鞋墊孔洞
+                                    <br>有更好的透氣舒適度</p>
+                            </div>
+                            <div class="mark-wb">
+                                <p>鞋舌正面印有
+                                    <br>大大的中國強商標</p>
+                            </div>
+                            <div class="hole-wb">
+                                <p>側邊兩個小洞可以
+                                    <br>讓鞋子更合腳</p>
+                            </div>
+                        </div>
+                        <div class="infoBox2">
+                            <div class="circlesmall" data-toggle="modal" data-target="#rubber-btm"></div>
+                        </div>
+                        <div class="infoBox3">
+                            <div class="circlesmall" data-toggle="modal" data-target="#footArch-btm"></div>
+                        </div>
+                        <div class="infoBox4">
+                            <div class="circlesmall" data-toggle="modal" data-target="#mark-btm"></div>
+                        </div>
+                        <div class="infoBox5">
+                            <div class="circlesmall" data-toggle="modal" data-target="#hole-btm"></div>
+                        </div>
+                        <img src="https://i.imgur.com/I3hbm9l.png" alt="" class="img-fluid ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- infoBox2 Modal -->
+        <div class="modal fade" id="rubber-btm" tabindex="-1" role="dialog" aria-labelledby="rubber-btmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="rubber-btmTitle">橡膠鞋底</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>全國首創第一雙
+                            <br>有生膠大底專利的帆布鞋
+                            <br>橡膠純度較一般市面鞋款高</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- infoBox3 Modal -->
+        <div class="modal fade" id="footArch-btm" tabindex="-1" role="dialog" aria-labelledby="footArch-btmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="footArch-btmTitle">專利足弓</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>特殊設計的鞋墊孔洞
+                            <br>有更好的透氣舒適度</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- infoBox4 Modal -->
+        <div class="modal fade" id="mark-btm" tabindex="-1" role="dialog" aria-labelledby="mark-btmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mark-btmTitle">中國強商標</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>鞋舌正面印有
+                            <br>大大的中國強商標</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- infoBox5 Modal -->
+        <div class="modal fade" id="hole-btm" tabindex="-1" role="dialog" aria-labelledby="hole-btmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="hole-btmTitle">側邊孔洞</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>側邊兩個小洞可以
+                            <br>讓鞋子更合腳</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="botlogo">
+            <img src="https://i.imgur.com/01X8g0q.png" alt="">
+            <div class="buy">購買來源
+                <i class="fas fa-angle-double-right"></i>
+            </div>
+            <ul>
+                <li>
+                    <a href="http://www.books.com.tw/web/sys_brand/0/0000005019" target="blank">博客來
+                        <span style=font-weight:bold>/</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1501100268" target="blank">Momo購物網
+                        <span style=font-weight:bold>/</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ecshweb.pchome.com.tw/search/v3.3/?q=%E4%B8%AD%E5%9C%8B%E5%BC%B7%E5%B8%86%E5%B8%83%E9%9E%8B" target="blank">PChome商店街 </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="js/smooth scrolling.js"></script>
+    <script>
+        AOS.init()
+    </script>
+    <script>
+        $(".rubberCircle").click(function () {
+            $(".rubberLine").toggleClass("active");
+            $(".rubber-wb").toggleClass("active");
+        });
+        $(".footArchCircle").click(function () {
+            $(".footArchLine").toggleClass("active");
+            $(".footArch-wb").toggleClass("active");
+        });
+        $(".markCircle").click(function () {
+            $(".markLine").toggleClass("active");
+            $(".mark-wb").toggleClass("active");
+        });
+        $(".holeCircle").click(function () {
+            $(".holeLine").toggleClass("active");
+            $(".hole-wb").toggleClass("active");
+        });
+    </script>
+</body>
+
+</html>
