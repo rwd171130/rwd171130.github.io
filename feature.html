@@ -255,6 +255,7 @@
             margin-top: 15%;
             margin-left: -13%;
             display: none;
+            width: 100px;
         }
 
         .rubberLine.active {
@@ -353,6 +354,44 @@
             font-size: 18px;
         }
 
+        .footer {
+            background-color: #F3E6B7;
+        }
+
+        .botlogo {
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        .botlogo img {
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+        }
+
+        .buy {
+            display: inline-block;
+            font-family: 微軟正黑體;
+            font-size: 18px;
+            vertical-align: middle;
+        }
+
+        .footer ul {
+            margin: 0;
+            display: inline-block;
+        }
+
+        .footer ul li {
+            display: inline-block;
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .footer li a {
+            color: black;
+        }
+
         @media screen and (max-width: 992px) {
             .bg-container {
                 background-image: url(https://i.imgur.com/EfkF86u.jpg);
@@ -369,6 +408,9 @@
                 bottom: -16%;
                 width: 430px;
             }
+            .hole-wb{
+                top:86px;
+            }
 
         }
 
@@ -377,9 +419,13 @@
                 display: none;
             }
             .shoes {
-                bottom: -16%;
-                width: 335px;
+                bottom: -11%;
+                width: 378px;
             }
+            .hole-wb{
+                top:116px;
+            }
+            
         }
 
         @media screen and (max-width: 555px) {
@@ -481,16 +527,12 @@
                     <div class="shoes">
                         <div class="infoBox">
                             <div class="rubberCircle">
-                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="footArchCircle">
-                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="markCircle">
-                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="holeCircle">
-                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="rubberLine">
                                 <img src="svg/rubberLine.svg" alt="" class="w-100">
@@ -610,6 +652,29 @@
             </div>
         </div>
 
+    </div>
+    <div class="footer">
+        <div class="botlogo">
+            <img src="https://i.imgur.com/01X8g0q.png" alt="">
+            <div class="buy">購買來源
+                <i class="fas fa-angle-double-right"></i>
+            </div>
+            <ul>
+                <li>
+                    <a href="http://www.books.com.tw/web/sys_brand/0/0000005019" target="blank">博客來
+                        <span style=font-weight:bold>/</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=1501100268" target="blank">Momo購物網
+                        <span style=font-weight:bold>/</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://ecshweb.pchome.com.tw/search/v3.3/?q=%E4%B8%AD%E5%9C%8B%E5%BC%B7%E5%B8%86%E5%B8%83%E9%9E%8B" target="blank">PChome商店街 </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
