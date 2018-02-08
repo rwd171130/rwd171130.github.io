@@ -71,6 +71,7 @@
                 padding: 26px 45px!important;
             }
         }
+
         @media screen and (max-width: 768px) {
             nav {
                 width: 355px;
@@ -78,19 +79,19 @@
                 background-image: url(https://i.imgur.com/QKK1EPT.png);
             }
             @keyframes ani1 {
-            0% {
-                background-image: url(https://i.imgur.com/QKK1EPT.png);
+                0% {
+                    background-image: url(https://i.imgur.com/QKK1EPT.png);
+                }
+                25% {
+                    background-image: url(https://i.imgur.com/x5elhBs.png);
+                }
+                75% {
+                    background-image: url(https://i.imgur.com/QKK1EPT.png);
+                }
+                100% {
+                    background-image: url(https://i.imgur.com/x5elhBs.png);
+                }
             }
-            25% {
-                background-image: url(https://i.imgur.com/x5elhBs.png);
-            }
-            75% {
-                background-image: url(https://i.imgur.com/QKK1EPT.png);
-            }
-            100% {
-                background-image: url(https://i.imgur.com/x5elhBs.png);
-            }
-        }
             .logo {
                 width: 80px!important;
                 height: 80px!important;
@@ -103,7 +104,7 @@
                 padding: 30px 9px!important;
             }
         }
-        
+
 
         .logo {
             position: absolute;
@@ -412,6 +413,25 @@
             .infoBox2 {
                 display: block;
                 position: absolute;
+                top: 105px;
+            }
+            .infoBox3 {
+                display: block;
+                position: absolute;
+                bottom: 65px;
+                left: 50px;
+            }
+            .infoBox4 {
+                display: block;
+                position: absolute;
+                top: 65px;
+                right: 87px;
+            }
+            .infoBox5 {
+                display: block;
+                position: absolute;
+                bottom: 65px;
+                right: 107px;
             }
             .circlesmall {
                 border: dashed 3px #F39700;
@@ -504,17 +524,88 @@
                             </div>
                         </div>
                         <div class="infoBox2">
-                            <div class="circlesmall" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                            <div class="circlesmall" data-toggle="modal" data-target="#rubber-btm"></div>
+                        </div>
+                        <div class="infoBox3">
+                            <div class="circlesmall" data-toggle="modal" data-target="#footArch-btm"></div>
+                        </div>
+                        <div class="infoBox4">
+                            <div class="circlesmall" data-toggle="modal" data-target="#mark-btm"></div>
+                        </div>
+                        <div class="infoBox5">
+                            <div class="circlesmall" data-toggle="modal" data-target="#hole-btm"></div>
                         </div>
                         <img src="https://i.imgur.com/I3hbm9l.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+        <!-- infoBox2 Modal -->
+        <div class="modal fade" id="rubber-btm" tabindex="-1" role="dialog" aria-labelledby="rubber-btmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    ...
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="rubber-btmTitle">橡膠鞋底</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>全國首創第一雙
+                            <br>有生膠大底專利的帆布鞋
+                            <br>橡膠純度較一般市面鞋款高</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- infoBox3 Modal -->
+        <div class="modal fade" id="footArch-btm" tabindex="-1" role="dialog" aria-labelledby="footArch-btmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="footArch-btmTitle">專利足弓</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>特殊設計的鞋墊孔洞
+                            <br>有更好的透氣舒適度</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- infoBox4 Modal -->
+        <div class="modal fade" id="mark-btm" tabindex="-1" role="dialog" aria-labelledby="mark-btmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mark-btmTitle">中國強商標</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>鞋舌正面印有
+                            <br>大大的中國強商標</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- infoBox5 Modal -->
+        <div class="modal fade" id="hole-btm" tabindex="-1" role="dialog" aria-labelledby="hole-btmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="hole-btmTitle">側邊孔洞</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>側邊兩個小洞可以
+                            <br>讓鞋子更合腳</p>
+                    </div>
                 </div>
             </div>
         </div>
