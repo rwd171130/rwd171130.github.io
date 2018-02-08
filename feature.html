@@ -71,6 +71,7 @@
                 padding: 26px 45px!important;
             }
         }
+
         @media screen and (max-width: 768px) {
             nav {
                 width: 350px;
@@ -78,19 +79,19 @@
                 background-image: url(https://i.imgur.com/PvTFMOa.png);
             }
             @keyframes ani1 {
-            0% {
-                background-image: url(https://i.imgur.com/PvTFMOa.png);
+                0% {
+                    background-image: url(https://i.imgur.com/PvTFMOa.png);
+                }
+                25% {
+                    background-image: url(https://i.imgur.com/zdc77W4.png);
+                }
+                75% {
+                    background-image: url(https://i.imgur.com/PvTFMOa.png);
+                }
+                100% {
+                    background-image: url(https://i.imgur.com/zdc77W4.png);
+                }
             }
-            25% {
-                background-image: url(https://i.imgur.com/zdc77W4.png);
-            }
-            75% {
-                background-image: url(https://i.imgur.com/PvTFMOa.png);
-            }
-            100% {
-                background-image: url(https://i.imgur.com/zdc77W4.png);
-            }
-        }
             .logo {
                 width: 80px!important;
                 height: 80px!important;
@@ -103,7 +104,7 @@
                 padding: 35px 18px!important;
             }
         }
-        
+
 
         .logo {
             position: absolute;
@@ -196,14 +197,24 @@
             transform: translate(-50%, -50%);
 
         }
+
         .infoBox {
             position: relative;
+        }
+
+        .infoBox2 {
+            display: none;
         }
 
         .rubberCircle {
             position: absolute;
             margin-top: 30%;
             cursor: pointer;
+            border: dashed 5px #F39700;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+
         }
 
         .footArchCircle {
@@ -211,6 +222,10 @@
             margin-top: 46%;
             margin-left: 15%;
             cursor: pointer;
+            border: dashed 5px #F39700;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
         }
 
         .markCircle {
@@ -218,6 +233,10 @@
             margin-top: 20%;
             margin-left: 57%;
             cursor: pointer;
+            border: dashed 5px #F39700;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
         }
 
         .holeCircle {
@@ -225,6 +244,10 @@
             margin-top: 46%;
             margin-left: 52%;
             cursor: pointer;
+            border: dashed 5px #F39700;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
         }
 
         .rubberLine {
@@ -330,52 +353,76 @@
             font-size: 18px;
         }
 
-            @media screen and (max-width: 992px) {
-                .bg-container {
-                    background-image: url(https://i.imgur.com/EfkF86u.jpg);
-                }
-                .greenlinebox {
-                    display: none;
-                }
-                .greenlinebox-m {
-                    display: block;
-                    position: relative;
-                    opacity: 0.5;
-                }
-                .shoes {
-                    bottom: -16%;
-                    width: 430px;
-                }
-                
+        @media screen and (max-width: 992px) {
+            .bg-container {
+                background-image: url(https://i.imgur.com/EfkF86u.jpg);
             }
-            @media screen and (max-width: 768px) {
-                .greenlinebox {
-                    display: none;
-                }
-                .shoes {
+            .greenlinebox {
+                display: none;
+            }
+            .greenlinebox-m {
+                display: block;
+                position: relative;
+                opacity: 0.5;
+            }
+            .shoes {
+                bottom: -16%;
+                width: 430px;
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .greenlinebox {
+                display: none;
+            }
+            .shoes {
                 bottom: -16%;
                 width: 335px;
-                }
+            }
+        }
+
+        @media screen and (max-width: 555px) {
+            .bg-container {
+                background-image: url(https://i.imgur.com/6QPPjg4.jpg);
+                background-size: cover;
+                min-height: 667px;
+            }
+            .container h1 {
+                margin-bottom: 100px;
+            }
+            .container h1::before {
+                width: 80px;
+                left: -90px;
             }
 
-            @media screen and (max-width: 555px) {
-                .bg-container {
-                    background-image: url(https://i.imgur.com/6QPPjg4.jpg);
-                    min-height: 667px;
-                }
-                .greenlinebox {
-                    display: none;
-                }
-                .shoes {
+            .container h1::after {
+                width: 80px;
+                right: -90px;
+            }
+            .greenlinebox {
+                display: none;
+            }
+            .shoes {
                 bottom: -16%;
                 width: 335px;
-                }
             }
-
-
-        
-        
+            .infoBox {
+                display: none;
+            }
+            .infoBox2 {
+                display: block;
+                position: absolute;
+            }
+            .circlesmall {
+                border: dashed 3px #F39700;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+        }
     </style>
+
 </head>
 
 <body>
@@ -415,22 +462,22 @@
                     <div class="shoes">
                         <div class="infoBox">
                             <div class="rubberCircle">
-                                <img src="svg/yellow-circle.svg" alt="" class="w-100">
+                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="footArchCircle">
-                                <img src="svg/yellow-circle.svg" alt="" class="w-100">
+                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="markCircle">
-                                <img src="svg/yellow-circle.svg" alt="" class="w-100">
+                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="holeCircle">
-                                <img src="svg/yellow-circle.svg" alt="" class="w-100">
+                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="rubberLine">
                                 <img src="svg/rubberLine.svg" alt="" class="w-100">
                             </div>
                             <div class="footArchLine">
-                                <img src="svg/footArchLine.svg" alt="" class="w-100">
+                                <img src="svg/footArchLine.svg" alt="" style="width: 100px">
                             </div>
                             <div class="markLine">
                                 <img src="svg/markLine.svg" alt="" class="w-100">
@@ -456,17 +503,20 @@
                                 <p>側邊兩個小洞可以
                                     <br>讓鞋子更合腳</p>
                             </div>
-
-
+                        </div>
+                        <div class="infoBox2">
+                            <div class="circlesmall" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
                         </div>
                         <img src="https://i.imgur.com/I3hbm9l.png" alt="" class="img-fluid">
-
-
-
                     </div>
-
                 </div>
-
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    ...
+                </div>
             </div>
         </div>
 
