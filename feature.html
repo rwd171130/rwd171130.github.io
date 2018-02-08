@@ -413,6 +413,19 @@
             .infoBox2 {
                 display: block;
                 position: absolute;
+                top: 107px;
+            }
+            .infoBox3 {
+                display: block;
+                position: absolute;
+                bottom: 65px;
+                left: 50px;
+            }
+            .infoBox4 {
+                display: block;
+                position: absolute;
+                top: 66px;
+                right: 91px;
             }
             .circlesmall {
                 border: dashed 3px #F39700;
@@ -462,16 +475,12 @@
                     <div class="shoes">
                         <div class="infoBox">
                             <div class="rubberCircle">
-                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="footArchCircle">
-                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="markCircle">
-                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="holeCircle">
-                                <!-- <img src="svg/yellow-circle.svg" alt="" class="w-100"> -->
                             </div>
                             <div class="rubberLine">
                                 <img src="svg/rubberLine.svg" alt="" class="w-100">
@@ -505,20 +514,72 @@
                             </div>
                         </div>
                         <div class="infoBox2">
-                            <div class="circlesmall" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                            <div class="circlesmall" data-toggle="modal" data-target="#rubberbtm"></div>
+                        </div>
+                        <div class="infoBox3">
+                            <div class="circlesmall" data-toggle="modal" data-target="#footArchbtm"></div>
+                        </div>
+                        <div class="infoBox4">
+                            <div class="circlesmall" data-toggle="modal" data-target="#markbtm"></div>
                         </div>
                         <img src="https://i.imgur.com/I3hbm9l.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+        <!-- infoBox2-Modal -->
+        <div class="modal fade" id="rubberbtm" tabindex="-1" role="dialog" aria-labelledby="rubberbtmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    ...
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="rubberbtmTitle">橡膠鞋底</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>全國首創第一雙
+                            <br>有生膠大底專利的帆布鞋
+                            <br>橡膠純度較一般市面鞋款高</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- infoBox3-Modal -->
+        <div class="modal fade" id="footArchbtm" tabindex="-1" role="dialog" aria-labelledby="footArchbtmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="footArchbtmTitle">專利足弓</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>特殊設計的鞋墊孔洞
+                            <br>有更好的透氣舒適度</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- infoBox4-Modal -->
+        <div class="modal fade" id="markbtm" tabindex="-1" role="dialog" aria-labelledby="markbtmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="markbtmTitle">中國強商標</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>鞋舌正面印有
+                            <br>大大的中國強商標</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
