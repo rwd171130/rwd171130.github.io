@@ -73,6 +73,7 @@
                 padding: 26px 45px!important;
             }
         }
+
         @media screen and (max-width: 768px) {
             nav {
                 width: 355px;
@@ -80,19 +81,19 @@
                 background-image: url(https://i.imgur.com/QKK1EPT.png);
             }
             @keyframes ani1 {
-            0% {
-                background-image: url(https://i.imgur.com/QKK1EPT.png);
+                0% {
+                    background-image: url(https://i.imgur.com/QKK1EPT.png);
+                }
+                25% {
+                    background-image: url(https://i.imgur.com/x5elhBs.png);
+                }
+                75% {
+                    background-image: url(https://i.imgur.com/QKK1EPT.png);
+                }
+                100% {
+                    background-image: url(https://i.imgur.com/x5elhBs.png);
+                }
             }
-            25% {
-                background-image: url(https://i.imgur.com/x5elhBs.png);
-            }
-            75% {
-                background-image: url(https://i.imgur.com/QKK1EPT.png);
-            }
-            100% {
-                background-image: url(https://i.imgur.com/x5elhBs.png);
-            }
-        }
             .logo {
                 width: 80px!important;
                 height: 80px!important;
@@ -105,7 +106,7 @@
                 padding: 30px 9px!important;
             }
         }
-        
+
 
         .logo {
             position: absolute;
@@ -192,7 +193,7 @@
 
 
         .btnimg img {
-            width: 470px;
+            width: 480px;
         }
 
 
@@ -264,6 +265,56 @@
         .footer li a {
             color: black;
         }
+
+        @media screen and (max-width: 1200px) {
+            .btnimg img {
+                width: 450px;
+            }
+            .links {
+                font-size: 18px;
+            }
+            .youtube iframe {
+                width: 450px;
+            }
+        }
+
+        @media screen and (max-width: 960px) {
+            .links {
+                text-align: center;
+            }
+            .btnimg img {
+                margin-bottom: 40px;
+            }
+            .youtube iframe {
+                margin-bottom: 40px;
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .btnimg img {
+                width: 300px;
+                
+            }
+            .youtube iframe {
+                width: 300px;
+                height: 200px;
+            }
+        }
+        @media screen and (max-width: 555px) {
+            .headline h1 {
+                margin-bottom: 100px;
+            }
+            .headline h1::before {
+                width: 80px;
+                left: -90px;
+            }
+
+            .headline h1::after {
+                width: 80px;
+                right: -90px;
+            }
+        }
     </style>
 </head>
 
@@ -295,11 +346,14 @@
                 <h1>媒體報導</h1>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-sm-12 col-12">
-                            <iframe width="520" height="315" src="https://www.youtube.com/embed/L7ZSCWF_JQk" frameborder="0" allow="autoplay; encrypted-media"
-                                allowfullscreen></iframe>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="youtube">
+                                <iframe width="550" height="315" src="https://www.youtube.com/embed/L7ZSCWF_JQk" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
+                            </div>
+
                         </div>
-                        <div class="col-md-6 col-sm-12 col-12">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                             <div data-aos="fade-up" data-aos-duration="1000" class="btnimg" data-toggle="modal" data-target="#exampleModalLong">
                                 <img src="https://i.imgur.com/NtkkH1D.jpg" border="0">
                             </div>
