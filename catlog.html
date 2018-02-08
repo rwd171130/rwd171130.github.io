@@ -12,6 +12,14 @@
     <link href="css/lightbox.min.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <style>
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: none;
+        }
+
         .row {
             margin-right: -15px;
             margin-left: -15px;
@@ -126,7 +134,8 @@
         }
 
         .menu a:hover {
-            color: #67000B
+            color: #BA0C25;
+            font-weight: bold;
         }
 
         .menu>li {
@@ -145,14 +154,6 @@
 
         .menu {
             font-size: 43px;
-        }
-
-        .menu a {
-            color: #67000B
-        }
-
-        .menu a:hover {
-            color: #67000B
         }
 
         .menu>li {
@@ -290,32 +291,32 @@
 
         @media screen and (max-width: 960px) {
             .container-fluid {
-            background: url(https://i.imgur.com/QqQnRzi.jpg);
-        }
-
-        @media screen and (max-width: 768px) {
-            .nav-item {
-                width: 100%;
-            }
-            .container-fluid {
-            background: url(https://i.imgur.com/DYodN5m.jpg);
-        }
-            
-        }
-        @media screen and (max-width: 555px) {
-            .headline h1 {
-                margin-bottom: 100px;
-            }
-            .headline h1::before {
-                width: 80px;
-                left: -90px;
+                background: url(https://i.imgur.com/QqQnRzi.jpg);
             }
 
-            .headline h1::after {
-                width: 80px;
-                right: -90px;
+            @media screen and (max-width: 768px) {
+                .nav-item {
+                    width: 100%;
+                }
+                .container-fluid {
+                    background: url(https://i.imgur.com/DYodN5m.jpg);
+                }
+
             }
-        }
+            @media screen and (max-width: 555px) {
+                .headline h1 {
+                    margin-bottom: 100px;
+                }
+                .headline h1::before {
+                    width: 80px;
+                    left: -90px;
+                }
+
+                .headline h1::after {
+                    width: 80px;
+                    right: -90px;
+                }
+            }
     </style>
 </head>
 
