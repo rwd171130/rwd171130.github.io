@@ -72,6 +72,7 @@
                 padding: 26px 45px!important;
             }
         }
+
         @media screen and (max-width: 768px) {
             nav {
                 width: 355px;
@@ -79,19 +80,19 @@
                 background-image: url(https://i.imgur.com/QKK1EPT.png);
             }
             @keyframes ani1 {
-            0% {
-                background-image: url(https://i.imgur.com/QKK1EPT.png);
+                0% {
+                    background-image: url(https://i.imgur.com/QKK1EPT.png);
+                }
+                25% {
+                    background-image: url(https://i.imgur.com/x5elhBs.png);
+                }
+                75% {
+                    background-image: url(https://i.imgur.com/QKK1EPT.png);
+                }
+                100% {
+                    background-image: url(https://i.imgur.com/x5elhBs.png);
+                }
             }
-            25% {
-                background-image: url(https://i.imgur.com/x5elhBs.png);
-            }
-            75% {
-                background-image: url(https://i.imgur.com/QKK1EPT.png);
-            }
-            100% {
-                background-image: url(https://i.imgur.com/x5elhBs.png);
-            }
-        }
             .logo {
                 width: 80px!important;
                 height: 80px!important;
@@ -104,7 +105,7 @@
                 padding: 30px 9px!important;
             }
         }
-        
+
 
         .logo {
             position: absolute;
@@ -273,7 +274,7 @@
             }
         }
 
-        }
+
 
         /* @media screen and (max-width:768px) {
             .leftpic {
@@ -283,6 +284,19 @@
                 margin-bottom: 50px;
             } */
 
+        @media screen and (max-width: 555px) {
+            .section2 h1 {
+                margin-bottom: 100px;
+            }
+            .section2 h1::before {
+                width: 80px;
+                left: -90px;
+            }
+
+            .section2 h1::after {
+                width: 80px;
+                right: -90px;
+            }
         }
     </style>
 </head>
