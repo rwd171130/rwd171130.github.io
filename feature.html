@@ -758,28 +758,6 @@
             $(".holeLine").toggleClass("active");
             $(".hole-wb").toggleClass("active");
         });
-        (0, _createClass3['default'])(Modal, [{
-            key: 'isInModal',
-            value: function isInModal(e) {
-                if (!/\biPhone\b|\biPod\b/i.test(navigator.userAgent)) {
-                    return;
-                }
-                // fix touch to scroll background page on iOS
-                var prefixCls = this.props.prefixCls;
-                var pNode = function (node) {
-                    while (node.parentNode && node.parentNode !== document.body) {
-                        if (node.classList.contains(prefixCls)) {
-                            return node;
-                        }
-                        node = node.parentNode;
-                    }
-                }(e.target);
-                if (!pNode) {
-                    e.preventDefault();
-                }
-                return true;
-            }
-        }, {
     </script>
 </body>
 
