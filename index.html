@@ -34,25 +34,27 @@
 
         .leftshoes {
             width: 600px;
-            margin-top: 200px;
+            top:50%;
+            transform:translateY(-50%);
             position: absolute;
             left: -90px;
             animation: ani2 1.5s 1;
             animation-timing-function: ease-in-out;
         }
         .biglogo {
-            margin-top: 145px;
             position: absolute;
             left: 50%;
+            top:50%;
             width: 1000px;
             z-index: 222;
-            transform: translateX(-50%) !important;
+            transform: translate(-50%,-50%) !important;
             animation: ani4 1.5s 1;
             animation-timing-function: ease-in-out;
         }
 
         .rightshoes {
-            margin-top: 220px;
+            top:50%;
+            transform:translateY(-50%);
             position: absolute;
             right: -250px;
             width: 700px;
@@ -73,11 +75,12 @@
 
         .botword {
             position: absolute;
-            bottom: 10px;
+            bottom:10%;
             text-align: center;
             width: 100%;
             animation: ani1 3s;
             animation-timing-function: ease-in-out;
+            margin-top: 50px;
         }
 
         @media screen and (max-width: 1220px) {
@@ -90,20 +93,24 @@
         @media screen and (max-width: 960px) {
             .biglogo {
                 width: 440px;
+                top:30%;
+                transform: translatey(-30%);
             }
             .leftshoes {
                 display: none;
             }
             .rightshoes {
                 position: absolute;
-                margin-top: 380px;
                 left: 0;
                 right: 0;
                 text-align: center;
+                margin-top: 150px;
                 width: 100%;
+                top:35%;
+                transform: translatey(-35%);
             }
             .rightshoes img {
-                width: 350px;
+                width: 250px;
             }
             .botword {
                 text-align: center;
