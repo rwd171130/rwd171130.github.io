@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta http-equiv="refresh" content="3.5;url=/history.html" />
+    <!-- <meta http-equiv="refresh" content="3.5;url=/history.html" /> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>中國強-品牌官網</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+
+
     <style>
         .row {
             margin-right: -15px;
@@ -33,9 +36,10 @@
             width: 600px;
             margin-top: 200px;
             position: absolute;
-            left: -150px;
+            left: -90px;
+            animation: ani2 1.5s 1;
+            animation-timing-function: ease-in-out;
         }
-
         .biglogo {
             margin-top: 145px;
             position: absolute;
@@ -43,6 +47,8 @@
             width: 1000px;
             z-index: 222;
             transform: translateX(-50%) !important;
+            animation: ani4 1.5s 1;
+            animation-timing-function: ease-in-out;
         }
 
         .rightshoes {
@@ -50,6 +56,8 @@
             position: absolute;
             right: -250px;
             width: 700px;
+            animation: ani3 1.5s 1;
+            animation-timing-function: ease-in-out;
         }
 
         .botwordstyle {
@@ -65,10 +73,11 @@
 
         .botword {
             position: absolute;
-            bottom: 20px;
+            bottom: 10px;
             text-align: center;
             width: 100%;
-            animation: ani1 2s;
+            animation: ani1 3s;
+            animation-timing-function: ease-in-out;
         }
 
         @media screen and (max-width: 1220px) {
@@ -126,16 +135,40 @@
             0% {
                 opacity: 0;
             }
-            25% {
-                opacity: 0.3;
+            100% {
+                opacity: 1;
             }
-            75% {
-                opacity: 0.8;
+        }
+        @keyframes ani2 {
+            0% {
+                left: -180px;
+                opacity: 0;
+            }
+            
+            100% {
+                left: -90px;
+                opacity: 1;
+            }
+        }
+        @keyframes ani3 {
+            0% {
+                right:-350px;
+                opacity: 0;
+            }
+            100% {
+                right:-250px;
+                opacity: 1;
+            }
+        }
+        @keyframes ani4 {
+            0% {
+                opacity: 0;
             }
             100% {
                 opacity: 1;
             }
         }
+        
     </style>
 </head>
 
@@ -160,16 +193,8 @@
             <div class="botword7 botwordstyle">魂</div>
         </div>
     </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script src="js/smooth scrolling.js"></script>
     <script>
         AOS.init()
     </script>
