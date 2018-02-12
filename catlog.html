@@ -231,7 +231,7 @@
             position: relative;
             display: inline-block;
             margin-bottom: 100px;
-            color:white;
+            color: white;
         }
 
 
@@ -292,20 +292,12 @@
         .footer li a {
             color: black;
         }
-
-        @media screen and (max-width: 960px) {
-            .container-fluid {
-                background: url(https://i.imgur.com/QqQnRzi.jpg);
+        @media screen and (max-width: 768px) {
+            .nav-item {
+                width: 100%;
             }
-
-            @media screen and (max-width: 768px) {
-                .nav-item {
-                    width: 100%;
-                }
-                .container-fluid {
-                    background: url(https://i.imgur.com/DYodN5m.jpg);
-                }
-
+            .container-fluid {
+                background: url(https://i.imgur.com/DYodN5m.jpg);
             }
         }
 
@@ -323,8 +315,9 @@
                 right: -90px;
             }
         }
+
         @media screen and (max-width: 960px) {
-            .botlogo img{
+            .botlogo img {
                 width: 50px;
                 height: 50px;
             }
